@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "General Sans";
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#minicircle {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 99999;
+  border-radius: 50%;
+}
+
+.bounding {
+  width: fit-content;
+  overflow: hidden;
+}
+
+.bounding .boundingelem {
+  transform: translateY(100%);
+}
+
+#main {
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+}
+
+#hero {
+  position: relative;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+
+  background-image: url(banner_vk.png);
+
+  overflow: hidden;
+
+  background-repeat: no-repeat;
+  background-size: 780px;
+  background-position: center;
+}
+#nav {
+  width: 100%;
+  padding: 20px 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+#heading {
+  margin-top: 90px;
+}
+
+#heading h1 {
+  margin-left: 30px;
+  opacity: 0.6;
+  line-height: 1;
+  /* font-family: "General Sans Medium"; */
+  font-size: 12vw;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#heading #secondh1 {
+  margin-left: 230px;
+}
+
+.blocktext {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: fit-content;
+}
+.blocktext h5 {
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: right !important;
+}
+
+#chhotiheadings {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 100px;
+  padding-right: 50px;
+}
+#chhotiheadings h5 {
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 1vw;
+  margin-top: 0.5vw;
+}
+#herofooter {
+  padding: 0 2vw;
+  width: 100%;
+  position: absolute;
+  bottom: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#herofooter a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#herofooter #iconset {
+  display: flex;
+  gap: 5px;
+}
+
+#herofooter .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: #888;
+  border-radius: 50%;
+}
+
+/* Second part of the project */
+
+#second {
+  color: #fff;
+  padding-right: 10vw;
+  padding-top: 200px;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+.elem {
+  position: relative;
+  width: 100%;
+  padding: 3.5vw 3vw;
+  border-top: 1px solid #888;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0;
+}
+
+.elem h1 {
+  text-transform: uppercase;
+  font-size: 4vw;
+  opacity: 0.7;
+}
+
+.elemlast {
+  border-bottom: 1px solid #888;
+}
+
+.elem img {
+  /* display: none; */
+  opacity: 0;
+  height: 140%;
+  z-index: 999;
+  position: absolute;
+}
+
+.A {
+  text-decoration: none;
+  padding: 10px 22px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  color: #fff;
+}
+
+/* About section start */
+
+#about {
+  gap: 50px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 10vw 10vw;
+  padding-left: 40vw;
+  width: 100%;
+  background-color: black;
+}
+
+#textabout {
+  width: 25rem;
+}
+#textabout h5 {
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+
+#textabout p {
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+#about img {
+  width: 200px;
+  border-radius: 50%;
+  size: 2000px;
+}
+
+#textabout a {
+  text-decoration: none;
+  padding: 12px 22px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  color: #fff;
+}
+
+#subscribe {
+  background-color: black;
+  color: #fff;
+  padding: 20px 30px;
+  padding-bottom: 7vw;
+}
+#subscribe h5 {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+#subscribe h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.youtube {
+  text-decoration: none;
+  padding: 10px 22px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  color: #fff;
+}
+
+#footer {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 30px;
+}
+
+#footerleft {
+  display: flex;
+  gap: 20px;
+}
+
+#footerright {
+  display: flex;
+  gap: 30px;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Add this at the end of your existing CSS for Making Responsive the website!*/
+/* Responsive adjustments of heading text */
+@media (max-width: 768px) {
+  Adjust font sizes #heading h1 {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust font sizes */
+  #heading h1 {
+    font-size: 6vw;
+  }
+
+  /* Adjust padding and margins */
+  #heading {
+    margin-top: 50px;
+  }
+
+  /* Responsive adjustments of about text section */
+  /* Adjust padding and margins */
+  #about {
+    padding: 5vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  #textabout {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #textabout a {
+    margin-top: 20px;
+  }
+
+  /* Center align the image */
+  #about img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust font sizes */
+  #textabout h5 {
+    font-size: 14px;
+  }
+  #textabout p {
+    font-size: 12px;
+  }
+
+  /* Adjust padding and margins */
+  #about {
+    padding: 5vw;
+  }
+}
+
+/* Responsive adjustments of Subscribe section */
+
+@media (max-width: 768px) {
+  /* Adjust font sizes */
+  #subscribe h5 {
+    font-size: 16px;
+  }
+  #subscribe h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust font sizes */
+  #subscribe h5 {
+    font-size: 14px;
+  }
+  #subscribe h3 {
+    font-size: 12px;
+  }
+}
+
+/* Responsive adjustments of footer section*/
+@media (max-width: 768px) {
+  /* Adjust font sizes */
+  #footer a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust font sizes */
+  #footer a {
+    font-size: 10px;
+  }
+}
